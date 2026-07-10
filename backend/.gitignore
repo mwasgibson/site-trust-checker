@@ -1,0 +1,5 @@
+node_modules/
+.env
+data/fingerprints.json
+data/image-hashes.json
+data/brand-tokens.json
