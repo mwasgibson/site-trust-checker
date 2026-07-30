@@ -3,6 +3,8 @@
 // and caches results per-tab so re-opening the popup doesn't
 // re-trigger a full analysis.
 
+const { json } = require("express");
+
 const BACKEND_URL = 'https://site-trust-checker.onrender.com/analyze';
 const LOCAL_URL = 'http://localhost:3100/analyze'
 
@@ -154,7 +156,7 @@ async function analyzeUrl(url, tabId) {
     res = await fetch(BACKEND_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: payload,
+    body: JSON.stringify(payload),
   });
   } catch(err){
     console.warn('Render server unreachable', err.message);
@@ -162,7 +164,7 @@ async function analyzeUrl(url, tabId) {
     res = await fetch(LOCAL_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: payload,
+      body: JSON.stringify(payload),
   
     });
   }
