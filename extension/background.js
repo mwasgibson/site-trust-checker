@@ -3,10 +3,8 @@
 // and caches results per-tab so re-opening the popup doesn't
 // re-trigger a full analysis.
 
-const { json } = require("express");
-
 const BACKEND_URL = 'https://site-trust-checker.onrender.com/analyze';
-const LOCAL_URL = 'http://localhost:3100/analyze'
+const LOCAL_URL = 'http://localhost:3100/analyze';
 
 // In-memory cache keyed by URL, cleared when the service worker
 // is unloaded (Chrome may do this after ~30s idle — that's fine,
@@ -45,13 +43,6 @@ function extractRenderedPageData() {
     .map((a) => a.href)
     .filter((href) => href && href.startsWith('http'));
 
-  // Dead-end "fake navigation" links: <a> tags that LOOK like real nav
-  // items (visible text like "About Us", "Contact") but go nowhere —
-  // href="#", empty href, javascript:void(0), or a "#section" hash with
-  // no matching element on the page. These were previously silently
-  // dropped entirely (they don't start with "http"), which meant a page
-  // full of decorative, non-functional nav links scored as if it had no
-  // navigation problems at all — the opposite of the truth.
   const deadEndLinks = [];
   const anchorTags = document.querySelectorAll('a');
   for (const a of anchorTags) {
@@ -76,9 +67,6 @@ function extractRenderedPageData() {
     }
   }
 
-  // Structural fingerprint: sequence of tag names in document order,
-  // ignoring text/attributes/styling — used to detect identical
-  // templates reused across unrelated "scam farm" domains.
   const structureTags = [];
   function walk(el) {
     if (structureTags.length >= MAX_STRUCTURE_NODES || !el) return;
@@ -92,10 +80,6 @@ function extractRenderedPageData() {
   }
   if (document.body) walk(document.body);
 
-  // Candidate images for reuse detection (logo, hero image, etc.) —
-  // just grab visible <img> tags in document order, dedupe, cap count.
-  // No size/position filtering for now; the backend caps how many it
-  // actually fetches and hashes.
   const images = Array.from(document.querySelectorAll('img[src]'))
     .map((img) => img.src)
     .filter((src) => src && src.startsWith('http'));
@@ -117,9 +101,6 @@ async function extractFromTab(tabId) {
     });
     return result || { text: '', links: [], deadEndLinks: [], structure: '', images: [] };
   } catch (err) {
-    // Injection can fail on chrome:// pages, the Chrome Web Store, or
-    // before the page has finished loading — fall back gracefully and
-    // let the backend do its own server-side fetch instead.
     console.warn('Site Trust Checker: could not extract rendered page data', err.message);
     return { text: '', links: [], deadEndLinks: [], structure: '', images: [] };
   }
@@ -142,32 +123,32 @@ async function analyzeUrl(url, tabId) {
     : { text: '', links: [], deadEndLinks: [], structure: '', images: [] };
 
   const payload = {
-      url,
-      userId,
-      renderedText,
-      renderedLinks,
-      renderedDeadEndLinks,
-      renderedStructure,
-      renderedImages,
-    }
+    url,
+    userId,
+    renderedText,
+    renderedLinks,
+    renderedDeadEndLinks,
+    renderedStructure,
+    renderedImages,
+  };
 
   let res;
-  try{
+  try {
     res = await fetch(BACKEND_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  });
-  } catch(err){
-    console.warn('Render server unreachable', err.message);
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+    });
+  } catch (err) {
+    console.warn('Render server unreachable, falling back to local...', err.message);
 
     res = await fetch(LOCAL_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload),
-  
     });
   }
+
   if (!res.ok) {
     throw new Error(`Backend returned ${res.status}`);
   }
