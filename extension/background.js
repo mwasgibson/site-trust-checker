@@ -3,7 +3,8 @@
 // and caches results per-tab so re-opening the popup doesn't
 // re-trigger a full analysis.
 
-const BACKEND_URL = 'http://localhost:3100/analyze';
+const BACKEND_URL = 'https://site-trust-checker.onrender.com/analyze';
+const LOCAL_URL = 'http://localhost:3100/analyze'
 
 // In-memory cache keyed by URL, cleared when the service worker
 // is unloaded (Chrome may do this after ~30s idle — that's fine,
@@ -138,10 +139,7 @@ async function analyzeUrl(url, tabId) {
     ? await extractFromTab(tabId)
     : { text: '', links: [], deadEndLinks: [], structure: '', images: [] };
 
-  const res = await fetch(BACKEND_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
+  const payload = {
       url,
       userId,
       renderedText,
@@ -149,9 +147,25 @@ async function analyzeUrl(url, tabId) {
       renderedDeadEndLinks,
       renderedStructure,
       renderedImages,
-    }),
-  });
+    }
 
+  let res;
+  try{
+    res = await fetch(BACKEND_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: payload,
+  });
+  } catch(err){
+    console.warn('Render server unreachable', err.message);
+
+    res = await fetch(LOCAL_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: payload,
+  
+    });
+  }
   if (!res.ok) {
     throw new Error(`Backend returned ${res.status}`);
   }

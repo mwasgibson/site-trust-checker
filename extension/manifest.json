@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "description": "Checks the site you're on for security issues and signs of being fake or AI-generated.",
   "permissions": ["activeTab", "storage", "tabs", "scripting"],
-  "host_permissions": ["http://localhost:3100/*"],
+  "host_permissions": ["https://site-trust-checker.onrender.com/*","http://localhost:3100/*"],
   "background": {
     "service_worker": "background.js"
   },

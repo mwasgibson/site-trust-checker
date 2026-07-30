@@ -1,6 +1,7 @@
 require('dotenv').config();
 
 const express = require('express');
+const cors = require('cors');
 const { checkHeaders } = require('./checks/headers');
 const { checkBrokenLinks } = require('./checks/brokenLinks');
 const { checkWhois } = require('./checks/whois');
@@ -15,6 +16,7 @@ const { isAdmin, getUsage } = require('./services/usageTracker');
 const app = express();
 const PORT = process.env.PORT || 3100;
 
+app.use(cors());
 app.use(express.json());
 
 // --- Extremely simple in-memory cache (swap for Redis in production) ---
@@ -34,15 +36,6 @@ function getCached(key) {
 function setCached(key, value) {
   cache.set(key, { value, timestamp: Date.now() });
 }
-
-// CORS for the extension (adjust origin as needed once you have an extension ID)
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-  if (req.method === 'OPTIONS') return res.sendStatus(200);
-  next();
-});
 
 app.get('/health', (req, res) => res.json({ ok: true }));
 
@@ -112,5 +105,5 @@ app.post('/analyze', async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Site Trust Checker backend running on http://localhost:${PORT}`);
+  console.log(`Site Trust Checker backend running on port: ${PORT}`);
 });
