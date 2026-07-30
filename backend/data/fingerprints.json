@@ -1,0 +1,282 @@
+{
+  "8c6e1d243b5d61ad": {
+    "domains": [
+      {
+        "domain": "simbacoach.online",
+        "firstSeen": "2026-07-09T09:21:17.184Z"
+      }
+    ]
+  },
+  "4c03766a04310381": {
+    "domains": [
+      {
+        "domain": "claude.ai",
+        "firstSeen": "2026-07-09T09:44:10.604Z"
+      }
+    ]
+  },
+  "5650ff9e97f1b9e1": {
+    "domains": [
+      {
+        "domain": "chrome.google.com",
+        "firstSeen": "2026-07-09T09:45:00.836Z"
+      }
+    ]
+  },
+  "1a968d227f37bbc2": {
+    "domains": [
+      {
+        "domain": "console.cloud.google.com",
+        "firstSeen": "2026-07-09T09:45:39.959Z"
+      }
+    ]
+  },
+  "674f403058798415": {
+    "domains": [
+      {
+        "domain": "developers.google.com",
+        "firstSeen": "2026-07-09T09:46:03.405Z"
+      }
+    ]
+  },
+  "6cdefb23801156a1": {
+    "domains": [
+      {
+        "domain": "chatgpt.com",
+        "firstSeen": "2026-07-09T09:46:38.720Z"
+      }
+    ]
+  },
+  "726029d0e86b24a9": {
+    "domains": [
+      {
+        "domain": "perplexity.ai",
+        "firstSeen": "2026-07-09T09:46:50.809Z"
+      }
+    ]
+  },
+  "47fb8620028fac26": {
+    "domains": [
+      {
+        "domain": "app.mintlify.com",
+        "firstSeen": "2026-07-09T09:47:17.574Z"
+      }
+    ]
+  },
+  "848e4dad718ed0bb": {
+    "domains": [
+      {
+        "domain": "vercel.com",
+        "firstSeen": "2026-07-09T09:47:42.279Z"
+      }
+    ]
+  },
+  "dd2f57320bb27350": {
+    "domains": [
+      {
+        "domain": "github.com",
+        "firstSeen": "2026-07-09T09:48:05.536Z"
+      }
+    ]
+  },
+  "349fcd348dc926a3": {
+    "domains": [
+      {
+        "domain": "login.nvgs.nvidia.com",
+        "firstSeen": "2026-07-09T10:39:13.831Z"
+      }
+    ]
+  },
+  "96b8b81730d78a7f": {
+    "domains": [
+      {
+        "domain": "developer.nvidia.com",
+        "firstSeen": "2026-07-09T10:44:25.568Z"
+      }
+    ]
+  },
+  "2976ca90945d88f9": {
+    "domains": [
+      {
+        "domain": "elisworld.tv",
+        "firstSeen": "2026-07-09T11:04:07.516Z"
+      }
+    ]
+  },
+  "14296dfa8824e2b8": {
+    "domains": [
+      {
+        "domain": "mail.google.com",
+        "firstSeen": "2026-07-09T11:04:57.317Z"
+      }
+    ]
+  },
+  "baf8757160bdf31e": {
+    "domains": [
+      {
+        "domain": "open.spotify.com",
+        "firstSeen": "2026-07-09T11:05:37.581Z"
+      }
+    ]
+  },
+  "ef0b37d8cb311629": {
+    "domains": [
+      {
+        "domain": "google.com",
+        "firstSeen": "2026-07-09T11:06:01.661Z"
+      }
+    ]
+  },
+  "eeb579a69eb2839d": {
+    "domains": [
+      {
+        "domain": "asoftmurmur.com",
+        "firstSeen": "2026-07-09T11:06:15.827Z"
+      }
+    ]
+  },
+  "4caf699d87bdbd49": {
+    "domains": [
+      {
+        "domain": "web.whatsapp.com",
+        "firstSeen": "2026-07-09T11:06:54.634Z"
+      }
+    ]
+  },
+  "3ba4266a5e9c195c": {
+    "domains": [
+      {
+        "domain": "rbtvplus18.hair",
+        "firstSeen": "2026-07-09T11:07:19.888Z"
+      }
+    ]
+  },
+  "92576a3fbe021eac": {
+    "domains": [
+      {
+        "domain": "photopea.com",
+        "firstSeen": "2026-07-09T11:07:46.243Z"
+      }
+    ]
+  },
+  "4ac99ed2ea934c80": {
+    "domains": [
+      {
+        "domain": "ilovepdf.com",
+        "firstSeen": "2026-07-09T11:08:05.779Z"
+      }
+    ]
+  },
+  "2a692b87e97bce14": {
+    "domains": [
+      {
+        "domain": "mx4.xtranet.co.ke",
+        "firstSeen": "2026-07-09T11:08:43.193Z"
+      }
+    ]
+  },
+  "ae6b8d05efa2e4a3": {
+    "domains": [
+      {
+        "domain": "egpkenya.go.ke",
+        "firstSeen": "2026-07-09T11:09:55.585Z"
+      }
+    ]
+  },
+  "5fcb0c6d51cb6121": {
+    "domains": [
+      {
+        "domain": "huggingbay.xyz",
+        "firstSeen": "2026-07-09T11:19:35.041Z"
+      }
+    ]
+  },
+  "991df986459344c1": {
+    "domains": [
+      {
+        "domain": "huggingface.co",
+        "firstSeen": "2026-07-09T11:59:54.783Z"
+      }
+    ]
+  },
+  "12b9f2745d75b736": {
+    "domains": [
+      {
+        "domain": "haveibeenpwned.com",
+        "firstSeen": "2026-07-09T12:06:19.169Z"
+      }
+    ]
+  },
+  "9ba7d42436b4a43a": {
+    "domains": [
+      {
+        "domain": "haveibeenpwned.com",
+        "firstSeen": "2026-07-09T12:06:31.190Z"
+      }
+    ]
+  },
+  "cb17e238d3bdcfde": {
+    "domains": [
+      {
+        "domain": "huggingbay.xyz",
+        "firstSeen": "2026-07-09T13:10:00.585Z"
+      }
+    ]
+  },
+  "2c444af33198b3c2": {
+    "domains": [
+      {
+        "domain": "alternativeto.net",
+        "firstSeen": "2026-07-09T13:11:21.359Z"
+      }
+    ]
+  },
+  "d8523828c59eb177": {
+    "domains": [
+      {
+        "domain": "tpbproxypirate.com",
+        "firstSeen": "2026-07-09T13:13:48.450Z"
+      }
+    ]
+  },
+  "f1e75ed4dbd736ff": {
+    "domains": [
+      {
+        "domain": "thepiratebay.org",
+        "firstSeen": "2026-07-09T13:16:27.110Z"
+      }
+    ]
+  },
+  "91e12c398a12fb8d": {
+    "domains": [
+      {
+        "domain": "pirateproxy-bay.com",
+        "firstSeen": "2026-07-09T13:17:04.160Z"
+      }
+    ]
+  },
+  "ddebbe959be98eca": {
+    "domains": [
+      {
+        "domain": "www4.thepiratebay3.co",
+        "firstSeen": "2026-07-09T13:17:38.729Z"
+      }
+    ]
+  },
+  "7ffb0887d6a4f9d5": {
+    "domains": [
+      {
+        "domain": "claude.ai",
+        "firstSeen": "2026-07-10T07:55:14.001Z"
+      }
+    ]
+  },
+  "5573b0f3f7eb73bf": {
+    "domains": [
+      {
+        "domain": "playreadingkenya.com",
+        "firstSeen": "2026-07-30T08:13:15.149Z"
+      }
+    ]
+  }
+}

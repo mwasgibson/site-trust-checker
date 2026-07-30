@@ -13,7 +13,7 @@ const { scoreReport } = require('./scoring');
 const { isAdmin, getUsage } = require('./services/usageTracker');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3100;
 
 app.use(express.json());
 

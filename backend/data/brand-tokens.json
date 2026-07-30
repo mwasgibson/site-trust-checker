@@ -1,0 +1,154 @@
+{
+  "simbacoach": [
+    {
+      "domain": "simbacoach.online",
+      "firstSeen": "2026-07-09T10:20:16.391Z"
+    }
+  ],
+  "github": [
+    {
+      "domain": "github.com",
+      "firstSeen": "2026-07-09T10:21:47.620Z"
+    }
+  ],
+  "vercel": [
+    {
+      "domain": "vercel.com",
+      "firstSeen": "2026-07-09T10:22:20.845Z"
+    }
+  ],
+  "mintlify": [
+    {
+      "domain": "app.mintlify.com",
+      "firstSeen": "2026-07-09T10:22:53.763Z"
+    }
+  ],
+  "nvidia": [
+    {
+      "domain": "login.nvgs.nvidia.com",
+      "firstSeen": "2026-07-09T10:39:13.834Z"
+    },
+    {
+      "domain": "developer.nvidia.com",
+      "firstSeen": "2026-07-09T10:44:25.570Z"
+    }
+  ],
+  "elisworld": [
+    {
+      "domain": "elisworld.tv",
+      "firstSeen": "2026-07-09T11:04:07.519Z"
+    }
+  ],
+  "google": [
+    {
+      "domain": "mail.google.com",
+      "firstSeen": "2026-07-09T11:04:57.318Z"
+    },
+    {
+      "domain": "google.com",
+      "firstSeen": "2026-07-09T11:06:01.662Z"
+    }
+  ],
+  "spotify": [
+    {
+      "domain": "open.spotify.com",
+      "firstSeen": "2026-07-09T11:05:37.583Z"
+    }
+  ],
+  "asoftmurmur": [
+    {
+      "domain": "asoftmurmur.com",
+      "firstSeen": "2026-07-09T11:06:15.829Z"
+    }
+  ],
+  "whatsapp": [
+    {
+      "domain": "web.whatsapp.com",
+      "firstSeen": "2026-07-09T11:06:54.636Z"
+    }
+  ],
+  "rbtvplus18": [
+    {
+      "domain": "rbtvplus18.hair",
+      "firstSeen": "2026-07-09T11:07:19.890Z"
+    }
+  ],
+  "photopea": [
+    {
+      "domain": "photopea.com",
+      "firstSeen": "2026-07-09T11:07:46.245Z"
+    }
+  ],
+  "ilovepdf": [
+    {
+      "domain": "ilovepdf.com",
+      "firstSeen": "2026-07-09T11:08:05.782Z"
+    }
+  ],
+  "xtranet": [
+    {
+      "domain": "mx4.xtranet.co.ke",
+      "firstSeen": "2026-07-09T11:08:43.194Z"
+    }
+  ],
+  "huggingbay": [
+    {
+      "domain": "huggingbay.xyz",
+      "firstSeen": "2026-07-09T11:19:35.043Z"
+    }
+  ],
+  "huggingface": [
+    {
+      "domain": "huggingface.co",
+      "firstSeen": "2026-07-09T11:59:54.785Z"
+    }
+  ],
+  "haveibeenpwned": [
+    {
+      "domain": "haveibeenpwned.com",
+      "firstSeen": "2026-07-09T12:06:19.176Z"
+    }
+  ],
+  "alternativeto": [
+    {
+      "domain": "alternativeto.net",
+      "firstSeen": "2026-07-09T13:11:21.361Z"
+    }
+  ],
+  "tpbproxypirate": [
+    {
+      "domain": "tpbproxypirate.com",
+      "firstSeen": "2026-07-09T13:13:48.454Z"
+    }
+  ],
+  "thepiratebay": [
+    {
+      "domain": "thepiratebay.org",
+      "firstSeen": "2026-07-09T13:16:27.113Z"
+    }
+  ],
+  "pirateproxybay": [
+    {
+      "domain": "pirateproxy-bay.com",
+      "firstSeen": "2026-07-09T13:17:04.162Z"
+    }
+  ],
+  "thepiratebay3": [
+    {
+      "domain": "www4.thepiratebay3.co",
+      "firstSeen": "2026-07-09T13:17:38.732Z"
+    }
+  ],
+  "claude": [
+    {
+      "domain": "claude.ai",
+      "firstSeen": "2026-07-10T07:55:14.007Z"
+    }
+  ],
+  "playreadingkenya": [
+    {
+      "domain": "playreadingkenya.com",
+      "firstSeen": "2026-07-30T08:13:15.154Z"
+    }
+  ]
+}

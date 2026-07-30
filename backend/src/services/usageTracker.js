@@ -28,7 +28,7 @@ const adminIds = new Set(
 // Once you introduce a subscription tier, set this to e.g. 100000
 // (tokens/month) and start enforcing it in hasExceededLimit().
 const FREE_TOKEN_LIMIT = process.env.FREE_TOKEN_LIMIT
-  ? parseInt(process.env.FREE_TOKEN_LIMIT, 10)
+  ? parseInt(process.env.FREE_TOKEN_LIMIT, 10000)
   : null;
 
 // userId -> { totalTokens, requests, firstSeen, lastSeen }

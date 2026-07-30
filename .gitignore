@@ -4,3 +4,4 @@ data/fingerprints.json
 data/image-hashes.json
 data/brand-tokens.json
 .DS_Store
+dist

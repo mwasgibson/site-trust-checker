@@ -1,0 +1,400 @@
+{
+  "00003c3c3c7e0000": [
+    {
+      "domain": "simbacoach.online",
+      "imageUrl": "https://simbacoach.online/assets/simba-logo-CGFVNERq.png",
+      "firstSeen": "2026-07-09T09:21:18.509Z"
+    }
+  ],
+  "ffff9c8000040000": [
+    {
+      "domain": "simbacoach.online",
+      "imageUrl": "https://simbacoach.online/assets/hero-bus-1-BSuADBLY.jpg",
+      "firstSeen": "2026-07-09T09:21:19.431Z"
+    }
+  ],
+  "188143e7487e655f": [
+    {
+      "domain": "simbacoach.online",
+      "imageUrl": "https://simbacoach.online/assets/hero-bus-2-Dsk1Zhlt.jpg",
+      "firstSeen": "2026-07-09T09:21:20.376Z"
+    }
+  ],
+  "fffc786041074100": [
+    {
+      "domain": "simbacoach.online",
+      "imageUrl": "https://simbacoach.online/assets/hero-bus-3-D8FBrJkl.jpg",
+      "firstSeen": "2026-07-09T09:21:20.881Z"
+    }
+  ],
+  "7f7f1f071f000000": [
+    {
+      "domain": "console.cloud.google.com",
+      "imageUrl": "https://lh3.googleusercontent.com/a/ACg8ocJS0-dSdl1J5UhfGrIxO-PlIPyca1D-HpFRl80UeNKJTbX_lIX9=s96-c",
+      "firstSeen": "2026-07-09T09:45:40.960Z"
+    },
+    {
+      "domain": "developers.google.com",
+      "imageUrl": "https://lh3.googleusercontent.com/ogw/AF2bZyj_dsOEL5wyUxh-MVETK3a37Fmct1tPgV6m8najoMDCeWM=s32-c-mo",
+      "firstSeen": "2026-07-09T09:46:12.070Z"
+    },
+    {
+      "domain": "app.mintlify.com",
+      "imageUrl": "https://lh3.googleusercontent.com/a/ACg8ocJS0-dSdl1J5UhfGrIxO-PlIPyca1D-HpFRl80UeNKJTbX_lIX9=s96-c",
+      "firstSeen": "2026-07-09T09:47:17.871Z"
+    },
+    {
+      "domain": "mail.google.com",
+      "imageUrl": "https://lh3.googleusercontent.com/ogw/AF2bZygjNhzqt8vOOaAA1JMkj4JKkcr6_RZqmjCpcsJsVOb6k9s=s32-c-mo",
+      "firstSeen": "2026-07-09T11:04:58.495Z"
+    }
+  ],
+  "0000207e7e000000": [
+    {
+      "domain": "chatgpt.com",
+      "imageUrl": "https://cdn.auth0.com/avatars/gm.png",
+      "firstSeen": "2026-07-09T09:46:39.454Z"
+    }
+  ],
+  "7e6e3c1881ffebe3": [
+    {
+      "domain": "perplexity.ai",
+      "imageUrl": "https://imagedelivery.net/MPdwyYSWT8IY7lxgN3x3Uw/067e0b4a-c1ae-4f7e-2b0b-8aa288660500/thumbnail",
+      "firstSeen": "2026-07-09T09:46:52.285Z"
+    }
+  ],
+  "c3813c3c3c1899db": [
+    {
+      "domain": "perplexity.ai",
+      "imageUrl": "https://www.google.com/s2/favicons?sz=128&domain=gist.github.com",
+      "firstSeen": "2026-07-09T09:46:53.206Z"
+    },
+    {
+      "domain": "perplexity.ai",
+      "imageUrl": "https://www.google.com/s2/favicons?sz=128&domain=github.com",
+      "firstSeen": "2026-07-09T09:46:53.724Z"
+    }
+  ],
+  "ffffffffffffffff": [
+    {
+      "domain": "perplexity.ai",
+      "imageUrl": "https://www.google.com/s2/favicons?sz=128&domain=ludwig.guru",
+      "firstSeen": "2026-07-09T09:46:54.551Z"
+    },
+    {
+      "domain": "developer.nvidia.com",
+      "imageUrl": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/descriptor-heap-cube.gif",
+      "firstSeen": "2026-07-09T10:44:27.635Z"
+    },
+    {
+      "domain": "mail.google.com",
+      "imageUrl": "https://mail.google.com/mail/u/0/images/cleardot.gif",
+      "firstSeen": "2026-07-09T11:04:58.790Z"
+    },
+    {
+      "domain": "tpbproxypirate.com",
+      "imageUrl": "https://www.tpbproxypirate.com/images/apple.png",
+      "firstSeen": "2026-07-09T13:13:49.322Z"
+    },
+    {
+      "domain": "pirateproxy-bay.com",
+      "imageUrl": "https://www.pirateproxy-bay.com/images/apple.png",
+      "firstSeen": "2026-07-09T13:17:05.489Z"
+    }
+  ],
+  "e0f8fefffffef8e0": [
+    {
+      "domain": "perplexity.ai",
+      "imageUrl": "https://www.google.com/s2/favicons?sz=128&domain=play.google.com",
+      "firstSeen": "2026-07-09T09:46:54.615Z"
+    }
+  ],
+  "ffe7e7e7e7e7e7ff": [
+    {
+      "domain": "app.mintlify.com",
+      "imageUrl": "https://app.mintlify.com/_next/image?url=https%3A%2F%2Fiad.microlink.io%2FLpxH6NQVGyI1uEBf4kWyZ8XlGvE-9vRCEwuhL4VYvgQcj5vslFcVNKqUSgaJqf2TEu94VS3PtruUNViemC7lRA.png&w=3840&q=75",
+      "firstSeen": "2026-07-09T09:47:19.956Z"
+    }
+  ],
+  "0018181818181800": [
+    {
+      "domain": "app.mintlify.com",
+      "imageUrl": "https://app.mintlify.com/_next/image?url=https%3A%2F%2Fiad.microlink.io%2F-o6ngERKUyEVHdcItnMtUhB9IXf505XmwwpWelUuWDdN16a9cfqRAbP98iIVnhwdJxDyVhY0_oTPXXJ5IXQ2Rg.png&w=3840&q=75",
+      "firstSeen": "2026-07-09T09:47:22.515Z"
+    }
+  ],
+  "00001c2c24380000": [
+    {
+      "domain": "app.mintlify.com",
+      "imageUrl": "https://avatars.githubusercontent.com/in/222410?v=4",
+      "firstSeen": "2026-07-09T09:47:22.894Z"
+    }
+  ],
+  "ffa5c3c3c3c3c3ff": [
+    {
+      "domain": "vercel.com",
+      "imageUrl": "https://avatars.githubusercontent.com/mwasgibson?s=40",
+      "firstSeen": "2026-07-09T09:47:45.642Z"
+    },
+    {
+      "domain": "github.com",
+      "imageUrl": "https://avatars.githubusercontent.com/u/239120697?v=4&size=64",
+      "firstSeen": "2026-07-09T09:48:06.744Z"
+    }
+  ],
+  "061e3e3f1b191900": [
+    {
+      "domain": "developer.nvidia.com",
+      "imageUrl": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/agentic-ai-visual-langchain-corp-blog-5431623-alt4-660x370.png",
+      "firstSeen": "2026-07-09T10:44:26.368Z"
+    }
+  ],
+  "00107e7e7e3e3c18": [
+    {
+      "domain": "developer.nvidia.com",
+      "imageUrl": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image4-660x370.png",
+      "firstSeen": "2026-07-09T10:44:26.729Z"
+    }
+  ],
+  "01061e3c790e0e1e": [
+    {
+      "domain": "developer.nvidia.com",
+      "imageUrl": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/06/AI-Factory-Secure-660x370.png",
+      "firstSeen": "2026-07-09T10:44:26.906Z"
+    }
+  ],
+  "f0f0e0e0a8f0ffff": [
+    {
+      "domain": "developer.nvidia.com",
+      "imageUrl": "https://developer-blogs.nvidia.com/wp-content/uploads/2026/07/image1-1.gif",
+      "firstSeen": "2026-07-09T10:44:27.476Z"
+    }
+  ],
+  "0000000004040000": [
+    {
+      "domain": "elisworld.tv",
+      "imageUrl": "https://elisworld.tv/wp-content/uploads/2026/04/logo-new-5-scaled.png",
+      "firstSeen": "2026-07-09T11:04:08.055Z"
+    }
+  ],
+  "00003c7e0000ffff": [
+    {
+      "domain": "elisworld.tv",
+      "imageUrl": "https://elisworld.tv/wp-content/uploads/2024/12/sss-300x300.png",
+      "firstSeen": "2026-07-09T11:04:08.273Z"
+    }
+  ],
+  "00017f3f3fff8000": [
+    {
+      "domain": "elisworld.tv",
+      "imageUrl": "https://elisworld.tv/wp-content/uploads/2026/07/cover-adventure-time-side-quests-1783172884-300x300.png",
+      "firstSeen": "2026-07-09T11:04:08.567Z"
+    }
+  ],
+  "0000000000787eff": [
+    {
+      "domain": "elisworld.tv",
+      "imageUrl": "https://elisworld.tv/wp-content/uploads/2024/12/adventuretime2-300x300.jpg",
+      "firstSeen": "2026-07-09T11:04:08.688Z"
+    }
+  ],
+  "f0fe7e1f00387c00": [
+    {
+      "domain": "elisworld.tv",
+      "imageUrl": "https://elisworld.tv/wp-content/uploads/2025/07/twww-300x300.jpg",
+      "firstSeen": "2026-07-09T11:04:08.912Z"
+    }
+  ],
+  "e7ffffffffdbc3c3": [
+    {
+      "domain": "mail.google.com",
+      "imageUrl": "https://ssl.gstatic.com/ui/v1/icons/mail/logo_loading_2x.png",
+      "firstSeen": "2026-07-09T11:04:58.010Z"
+    }
+  ],
+  "00bcffffffffff64": [
+    {
+      "domain": "mail.google.com",
+      "imageUrl": "https://ssl.gstatic.com/ui/v1/icons/mail/google_workspace_2x.png",
+      "firstSeen": "2026-07-09T11:04:58.178Z"
+    }
+  ],
+  "00e0e0e0e0e0e000": [
+    {
+      "domain": "mail.google.com",
+      "imageUrl": "https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r7.png",
+      "firstSeen": "2026-07-09T11:04:58.194Z"
+    }
+  ],
+  "ffffff7e3c000000": [
+    {
+      "domain": "open.spotify.com",
+      "imageUrl": "https://daylist.spotifycdn.com/playlist-covers-mix/en/afternoon_default.jpg",
+      "firstSeen": "2026-07-09T11:05:39.550Z"
+    }
+  ],
+  "3c3c000000000000": [
+    {
+      "domain": "asoftmurmur.com",
+      "imageUrl": "https://asoftmurmur.com/assets/spinner.gif",
+      "firstSeen": "2026-07-09T11:06:16.759Z"
+    }
+  ],
+  "3e1c465c46666424": [
+    {
+      "domain": "web.whatsapp.com",
+      "imageUrl": "https://media-mba2-1.cdn.whatsapp.net/v/t61.24694-24/608272606_2030929194364587_4565638289151245735_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa5AFtnV0hEjgX81Jp40fQKL9RSeDxYIT6jvkWRM5DwnW6xA&oe=6A5C9B87&_nc_sid=5e03e0&_nc_cat=106",
+      "firstSeen": "2026-07-09T11:06:54.885Z"
+    }
+  ],
+  "ffffef3f18000000": [
+    {
+      "domain": "web.whatsapp.com",
+      "imageUrl": "https://media-mba2-1.cdn.whatsapp.net/v/t61.24694-24/646302491_849772594873986_5924577744290921105_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa5AGBTKYI_TJR3iExbRBvwiLaN1UylEAwOSD8zTGW-00HPQ&oe=6A5C7DB7&_nc_sid=5e03e0&_nc_cat=110",
+      "firstSeen": "2026-07-09T11:06:54.934Z"
+    }
+  ],
+  "1d1f1f0f0f171f3f": [
+    {
+      "domain": "web.whatsapp.com",
+      "imageUrl": "https://media-mba2-1.cdn.whatsapp.net/v/t61.24694-24/739174854_2793340821065418_4422881714653756325_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa5AERpnWwJvrFxLKb3zLr0ByACobJjXS-VOc4_LmS7x-5Ag&oe=6A5C7C0A&_nc_sid=5e03e0&_nc_cat=100",
+      "firstSeen": "2026-07-09T11:06:54.951Z"
+    }
+  ],
+  "cecc5c5c58500000": [
+    {
+      "domain": "web.whatsapp.com",
+      "imageUrl": "https://media-mba2-1.cdn.whatsapp.net/v/t61.24694-24/728580532_1978466922788794_2603079416734348191_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5Aa5AEVvd9Cb1_HRYj7vc7bur4ueoAoBP8H5mkFikALXY812w&oe=6A5C59B3&_nc_sid=5e03e0&_nc_cat=107",
+      "firstSeen": "2026-07-09T11:06:54.971Z"
+    }
+  ],
+  "c0fefefefefefcc0": [
+    {
+      "domain": "rbtvplus18.hair",
+      "imageUrl": "https://statics1.tcfru133dd3c.ru/img/rb/web-logo-rbplus.png",
+      "firstSeen": "2026-07-09T11:07:20.601Z"
+    }
+  ],
+  "7fc3ffde16040e12": [
+    {
+      "domain": "rbtvplus18.hair",
+      "imageUrl": "https://statics1.tcfru133dd3c.ru/img/world-cup/menu-wc-2026-v4.png",
+      "firstSeen": "2026-07-09T11:07:20.689Z"
+    }
+  ],
+  "7e819dadb5a9a17e": [
+    {
+      "domain": "photopea.com",
+      "imageUrl": "https://www.photopea.com/promo/icon512.png",
+      "firstSeen": "2026-07-09T11:07:47.011Z"
+    },
+    {
+      "domain": "photopea.com",
+      "imageUrl": "https://www.vecpea.com/promo/icon512.png",
+      "firstSeen": "2026-07-09T11:07:49.338Z"
+    }
+  ],
+  "7ee7e7e7e7c3c37e": [
+    {
+      "domain": "ilovepdf.com",
+      "imageUrl": "https://www.ilovepdf.com/img/avatar/default30.png",
+      "firstSeen": "2026-07-09T11:08:06.105Z"
+    },
+    {
+      "domain": "ilovepdf.com",
+      "imageUrl": "https://www.ilovepdf.com/img/avatar/avatar-default.png",
+      "firstSeen": "2026-07-09T11:08:06.196Z"
+    }
+  ],
+  "007f7f7f701f7f7f": [
+    {
+      "domain": "ilovepdf.com",
+      "imageUrl": "https://www.ilovepdf.com/img/home/desktop.png",
+      "firstSeen": "2026-07-09T11:08:06.260Z"
+    }
+  ],
+  "ffffffd3f3f3f3f3": [
+    {
+      "domain": "ilovepdf.com",
+      "imageUrl": "https://www.ilovepdf.com/img/home/mobile.png",
+      "firstSeen": "2026-07-09T11:08:06.488Z"
+    }
+  ],
+  "d4dfffdfffffdfff": [
+    {
+      "domain": "mx4.xtranet.co.ke",
+      "imageUrl": "https://mx4.xtranet.co.ke/skins/_base/logos/LoginBanner.png?v=201103051730",
+      "firstSeen": "2026-07-09T11:08:43.244Z"
+    }
+  ],
+  "0000bc7000000000": [
+    {
+      "domain": "mx4.xtranet.co.ke",
+      "imageUrl": "https://mx4.xtranet.co.ke/img/zimbra.gif?v=201103051730",
+      "firstSeen": "2026-07-09T11:08:43.273Z"
+    }
+  ],
+  "fe785cfe7c7c7898": [
+    {
+      "domain": "mx4.xtranet.co.ke",
+      "imageUrl": "https://mx4.xtranet.co.ke/img/zimbra.png?v=201103051730",
+      "firstSeen": "2026-07-09T11:08:43.329Z"
+    }
+  ],
+  "3c3c3c3c7cfcfa7a": [
+    {
+      "domain": "mx4.xtranet.co.ke",
+      "imageUrl": "https://mx4.xtranet.co.ke/img/large/ImgPerson_48.png?v=201103051730",
+      "firstSeen": "2026-07-09T11:08:43.353Z"
+    }
+  ],
+  "ffa28083838183ff": [
+    {
+      "domain": "egpkenya.go.ke",
+      "imageUrl": "https://egpkenya.go.ke/assets/images/logo.png",
+      "firstSeen": "2026-07-09T11:09:55.730Z"
+    }
+  ],
+  "bfbf3f40c088ffed": [
+    {
+      "domain": "egpkenya.go.ke",
+      "imageUrl": "https://egpkenya.go.ke/assets/images/kenya-logo.png",
+      "firstSeen": "2026-07-09T11:09:55.754Z"
+    }
+  ],
+  "ffc3c3c3c3c3c3e7": [
+    {
+      "domain": "huggingbay.xyz",
+      "imageUrl": "https://huggingbay.xyz/hugging-bay-header.jpg",
+      "firstSeen": "2026-07-09T11:19:35.493Z"
+    }
+  ],
+  "ffe7c3c383c38184": [
+    {
+      "domain": "thepiratebay.org",
+      "imageUrl": "https://torrindex.net/images/tpb.jpg",
+      "firstSeen": "2026-07-09T13:16:27.625Z"
+    }
+  ],
+  "0303071331276f2f": [
+    {
+      "domain": "playreadingkenya.com",
+      "imageUrl": "https://playreadingkenya.com/assets/images/The%20Trial%20Of%20Dedan%20Kimathi%20Book%20Reading%20by%20playreading%20Kenya.jpg",
+      "firstSeen": "2026-07-30T08:13:35.252Z"
+    }
+  ],
+  "fbffff9b1e044a03": [
+    {
+      "domain": "playreadingkenya.com",
+      "imageUrl": "https://playreadingkenya.com/assets/images/The%20Trial%20Of%20Dedan%20Kimathi%20Book%20Reading%20by%20PLAYREADINGKENYA%20(2).jpg",
+      "firstSeen": "2026-07-30T08:13:38.139Z"
+    }
+  ],
+  "4c80ff0d19892c27": [
+    {
+      "domain": "playreadingkenya.com",
+      "imageUrl": "https://playreadingkenya.com/assets/images/The%20Trial%20Of%20Dedan%20Kimathi%20Book%20Reading%20by%20playreadingkenya.jpg",
+      "firstSeen": "2026-07-30T08:13:41.869Z"
+    }
+  ]
+}

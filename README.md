@@ -47,10 +47,10 @@ cp .env.example .env   # add your Google Safe Browsing key (optional but recomme
 node src/server.js
 ```
 
-Server starts on `http://localhost:3000`. Test it:
+Server starts on `http://localhost:3100`. Test it:
 
 ```bash
-curl -X POST http://localhost:3000/analyze \
+curl -X POST http://localhost:3100/analyze \
   -H "Content-Type: application/json" \
   -d '{"url":"https://example.com"}'
 ```
@@ -60,7 +60,7 @@ curl -X POST http://localhost:3000/analyze \
 1. Open `chrome://extensions`
 2. Enable **Developer mode** (top right)
 3. Click **Load unpacked** and select the `extension/` folder
-4. Make sure the backend is running on `localhost:3000`
+4. Make sure the backend is running on `localhost:3100`
 5. Click the extension icon on any site to see its trust report
 
 ## What's implemented vs. stubbed

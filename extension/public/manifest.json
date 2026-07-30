@@ -4,12 +4,12 @@
   "version": "0.1.0",
   "description": "Checks the site you're on for security issues and signs of being fake or AI-generated.",
   "permissions": ["activeTab", "storage", "tabs", "scripting"],
-  "host_permissions": ["http://localhost:3000/*"],
+  "host_permissions": ["http://localhost:3100/*"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "index.html",
     "default_icon": {
       "16": "icons/icon16.png",
       "48": "icons/icon48.png",
