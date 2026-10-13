@@ -15,7 +15,7 @@ site-trust-checker/
 │   │   │   ├── brokenLinks.js   Scrapes homepage, finds dead links
 │   │   │   ├── whois.js         Domain age / registration checks
 │   │   │   ├── blocklist.js     Google Safe Browsing lookup
-│   │   │   ├── aiContent.js     LLM-based AI-generated/template content check
+│   │   │   ├── aiContent.js     LLM-based AI-generated/template content check (OpenRouter)
 │   │   │   ├── templateFingerprint.js   Detects identical page structure reused across domains
 │   │   │   ├── imageReuse.js    Perceptual-hash detection of identical images across domains
 │   │   │   └── brandSimilarity.js   Detects same brand name reused across different domains/TLDs
@@ -43,7 +43,7 @@ site-trust-checker/
 ```bash
 cd backend
 npm install
-cp .env.example .env   # add your Google Safe Browsing key (optional but recommended)
+cp .env.example .env   # add your keys (Google Safe Browsing + OpenRouter recommended)
 node src/server.js
 ```
 
@@ -71,7 +71,7 @@ curl -X POST http://localhost:3100/analyze \
 | Broken link detection | ✅ Working — checks up to 50 links, detects **soft 404s** (pages returning HTTP 200 but showing "not found" content) on key trust pages, uses the extension's rendered-DOM links when available |
 | WHOIS domain age | ✅ Working — now tries **RDAP** first (HTTPS-based, works through more firewalls/proxies than raw WHOIS), falls back to raw WHOIS (TCP port 43) if RDAP fails for that TLD |
 | Google Safe Browsing blocklist | ✅ Working, but needs a free API key in `.env` — gracefully skips if absent |
-| AI-generated content detection | ✅ Working, LLM-based (Claude Haiku by default) — needs `ANTHROPIC_API_KEY` in `.env`, gracefully skips if absent. Uses the extension's rendered-DOM text when available |
+| AI-generated content detection | ✅ Working, LLM-based via **OpenRouter** (Claude Haiku by default) — needs `OPENROUTER_API_KEY` in `.env`, gracefully skips if absent. Uses the extension's rendered-DOM text when available. Any OpenRouter model can be selected via `AI_CONTENT_MODEL` |
 | Template fingerprint reuse | ✅ Fully working — hashes the page's tag structure and flags when the identical structure appears on 1+ other domains. No external API needed; persists to `data/fingerprints.json` |
 | Image reuse detection | ✅ Fully working — perceptual-hashes up to 5 images per page and flags when a visually-identical image appears on other domains. No external API needed; persists to `data/image-hashes.json` |
 | Brand-name / typosquat similarity | ✅ Fully working — flags when a domain's core name matches another domain you've scanned before on a different TLD/address (e.g. `simbacoach.online` vs. `simbacoach.com`). No external API needed; persists to `data/brand-tokens.json` |
@@ -162,9 +162,19 @@ Each check result includes a `linkSource` / `textSource` field
 ## AI content detection + token usage
 
 `checks/aiContent.js` sends up to ~4000 characters of visible page text to
-Claude and asks for a structured JSON rating (`aiGeneratedLikelihood`,
-`indicators`, `reasoning`). It's treated as a **medium/weak** signal in
-scoring, never a strong one, since LLM text-detection is inherently fuzzy.
+an LLM through **OpenRouter** and asks for a structured JSON rating
+(`aiGeneratedLikelihood`, `indicators`, `reasoning`). It's treated as a
+**medium/weak** signal in scoring, never a strong one, since LLM
+text-detection is inherently fuzzy.
+
+**Provider**: [OpenRouter](https://openrouter.ai) (OpenAI-compatible). Set
+`OPENROUTER_API_KEY` in `.env`. Optionally set `AI_CONTENT_MODEL` to any
+OpenRouter model id (default: `anthropic/claude-haiku-4.5`). Examples:
+
+- `anthropic/claude-haiku-4.5`
+- `google/gemini-2.0-flash-lite-001`
+- `openai/gpt-4o-mini`
+- `openrouter/free` (routes to free models when available)
 
 **Usage is free and unlimited for everyone right now.** Token usage is
 still tracked per user (`services/usageTracker.js`) so you have real
@@ -310,12 +320,9 @@ exercisable live in this sandbox:
 - **Google Safe Browsing blocklist calls** — no API key was available in
   this environment. Confirmed the code skips gracefully when the key is
   absent; the actual authenticated call was never exercised.
-- **Anthropic API calls for AI-content detection** — `api.anthropic.com`
-  is reachable from this sandbox, but no `ANTHROPIC_API_KEY` was available
-  to authenticate with. Confirmed the endpoint responds (got a real 401
-  for a missing key) and confirmed the skip-gracefully path, and separately
-  unit-tested the JSON-parsing/scoring logic with a simulated model
-  response — but never ran a real end-to-end model call.
+- **OpenRouter API calls for AI-content detection** — requires an
+  `OPENROUTER_API_KEY`. The skip-gracefully path and JSON parsing logic
+  are unit-tested; a live model call needs a real key.
 - **True reverse image search** — not built at all (needs a paid
   TinEye/Google Vision API key).
 
@@ -334,6 +341,6 @@ verified live in this session.
 
 Treat the final score as a **risk indicator, not a verdict**. Blocklist hits
 and domain age are strong signals; broken links and missing headers are
-supporting evidence; content/image heuristics (once built) should be
-weighted lightly and always shown with their individual reasoning so users
-can judge for themselves.
+supporting evidence; content/image heuristics should be weighted lightly
+and always shown with their individual reasoning so users can judge for
+themselves.
