@@ -11,9 +11,10 @@
  * Requires OPENROUTER_API_KEY in your environment.
  * Get a key at https://openrouter.ai/keys
  *
- * Model is configurable via AI_CONTENT_MODEL (OpenRouter model id,
- * e.g. anthropic/claude-haiku-4.5, google/gemini-2.0-flash-lite-001,
- * openai/gpt-4o-mini, or any free model).
+ * Model is configurable via AI_CONTENT_MODEL (OpenRouter model id).
+ * Default: openrouter/free (routes to free models when available).
+ * Other examples: anthropic/claude-haiku-4.5, google/gemini-2.0-flash-lite-001,
+ * openai/gpt-4o-mini.
  *
  * Note: this fetches raw HTML server-side when the extension does not
  * supply renderedText, so it will miss content that's rendered
@@ -25,7 +26,7 @@ const { recordUsage, hasExceededLimit, isAdmin } = require('../services/usageTra
 const { isEnvironmentBlocked, getDenyReason } = require('../services/networkGuard');
 
 const OPENROUTER_ENDPOINT = 'https://openrouter.ai/api/v1/chat/completions';
-const MODEL = process.env.AI_CONTENT_MODEL || 'anthropic/claude-haiku-4.5';
+const MODEL = process.env.AI_CONTENT_MODEL || 'openrouter/free';
 const MAX_TEXT_CHARS = 4000; // keep token cost predictable
 
 const SYSTEM_PROMPT = `You analyze website text to assess whether it reads as AI-generated or generic scam/template boilerplate, as opposed to genuine, specific, human-written business content.
