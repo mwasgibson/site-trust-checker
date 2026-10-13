@@ -71,7 +71,7 @@ curl -X POST http://localhost:3100/analyze \
 | Broken link detection | ✅ Working — checks up to 50 links, detects **soft 404s** (pages returning HTTP 200 but showing "not found" content) on key trust pages, uses the extension's rendered-DOM links when available |
 | WHOIS domain age | ✅ Working — now tries **RDAP** first (HTTPS-based, works through more firewalls/proxies than raw WHOIS), falls back to raw WHOIS (TCP port 43) if RDAP fails for that TLD |
 | Google Safe Browsing blocklist | ✅ Working, but needs a free API key in `.env` — gracefully skips if absent |
-| AI-generated content detection | ✅ Working, LLM-based via **OpenRouter** (Claude Haiku by default) — needs `OPENROUTER_API_KEY` in `.env`, gracefully skips if absent. Uses the extension's rendered-DOM text when available. Any OpenRouter model can be selected via `AI_CONTENT_MODEL` |
+| AI-generated content detection | ✅ Working, LLM-based via **OpenRouter** (default: `openrouter/free`) — needs `OPENROUTER_API_KEY` in `.env`, gracefully skips if absent. Uses the extension's rendered-DOM text when available. Any OpenRouter model can be selected via `AI_CONTENT_MODEL` |
 | Template fingerprint reuse | ✅ Fully working — hashes the page's tag structure and flags when the identical structure appears on 1+ other domains. No external API needed; persists to `data/fingerprints.json` |
 | Image reuse detection | ✅ Fully working — perceptual-hashes up to 5 images per page and flags when a visually-identical image appears on other domains. No external API needed; persists to `data/image-hashes.json` |
 | Brand-name / typosquat similarity | ✅ Fully working — flags when a domain's core name matches another domain you've scanned before on a different TLD/address (e.g. `simbacoach.online` vs. `simbacoach.com`). No external API needed; persists to `data/brand-tokens.json` |
@@ -169,12 +169,12 @@ text-detection is inherently fuzzy.
 
 **Provider**: [OpenRouter](https://openrouter.ai) (OpenAI-compatible). Set
 `OPENROUTER_API_KEY` in `.env`. Optionally set `AI_CONTENT_MODEL` to any
-OpenRouter model id (default: `anthropic/claude-haiku-4.5`). Examples:
+OpenRouter model id (default: `openrouter/free`). Examples:
 
+- `openrouter/free` (default — routes to free models when available)
 - `anthropic/claude-haiku-4.5`
 - `google/gemini-2.0-flash-lite-001`
 - `openai/gpt-4o-mini`
-- `openrouter/free` (routes to free models when available)
 
 **Usage is free and unlimited for everyone right now.** Token usage is
 still tracked per user (`services/usageTracker.js`) so you have real
